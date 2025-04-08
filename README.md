@@ -1,1 +1,0 @@
-# Pterodactyl-Theme-Autoinstaller
