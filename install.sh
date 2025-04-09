@@ -87,14 +87,16 @@ install_theme() {
     echo "1. stellar"
     echo "2. billing"
     echo "3. enigma"
+    echo "4. elysium"
     echo "x. kembali"
-    echo -ne "masukan pilihan (1/2/3/x) : "
+    echo -ne "masukan pilihan (1/2/3/4/x) : "
     read -r SELECT_THEME
 
     case "$SELECT_THEME" in
       1) THEME_NAME="stellar"; break ;;
       2) THEME_NAME="billing"; break ;;
       3) THEME_NAME="enigma"; break ;;
+      4) THEME_NAME="elysium"; break ;;
       x) return ;;
       *) echo -e "${RED}Pilihan tidak valid, silakan coba lagi.${NC}" ;;
     esac
