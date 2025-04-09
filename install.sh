@@ -100,7 +100,7 @@ install_theme() {
     esac
   done
 
-  THEME_URL="https://github.com/disastervanz/Pterodactyl-Theme-Autoinstaller/raw/main/${THEME_NAME}.zip"
+  THEME_URL="https://github.com/DisasterVanz/Pterodactyl-Theme-Autoinstaller/raw/main/${THEME_NAME}.zip"
 
   echo "[+] Menghapus folder lama..."
   sudo rm -rf /root/pterodactyl
@@ -151,7 +151,6 @@ install_theme() {
   echo -e "${GREEN}[+]           THEME ${THEME_NAME^^} BERHASIL DIINSTALL          [+]${NC}"
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   sleep 5
-  clear
   exit 0
 }
 
@@ -163,7 +162,7 @@ uninstall_theme() {
   echo -e "${BLUE}[+]                    DELETE THEME                 [+]${NC}"
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
-  bash <(curl https://raw.githubusercontent.com/disastervanz/Pterodactyl-Theme-Autoinstaller/main/repair.sh)
+  bash <(curl https://raw.githubusercontent.com/DisasterVanz/Pterodactyl-Theme-Autoinstaller/main/repair.sh)
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
   echo -e "${GREEN}[+]                 DELETE THEME SUKSES             [+]${NC}"
@@ -182,7 +181,7 @@ echo -e "${BLUE}[+] =============================================== [+]${NC}"
 echo -e "                                                                   "
 
 # Unduh file tema
-wget -O /root/stellar.zip https://github.com/disastervanz/Pterodactyl-Theme-Autoinstaller/raw/main/stellar.zip
+wget -O /root/stellar.zip https://github.com/DisasterVanz/Pterodactyl-Theme-Autoinstaller/raw/main/stellar.zip
 
 
 # Ekstrak file tema
