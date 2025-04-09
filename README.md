@@ -27,7 +27,7 @@ bash <(curl -s https://raw.githubusercontent.com/DisasterVanz/Pterodactyl-Theme-
 |                  | 11      | :white_check_mark: |
 |                  | 12      | :white_check_mark: |
 
-_\Di atas adalah os yang saya test, selebihnya bisa di test sendiri._
+_Di atas adalah os yang saya test, selebihnya bisa di test sendiri._
 
 ## Credits 
 - Recode By [ Vanz ](https://github.com/DisasterVanz)
