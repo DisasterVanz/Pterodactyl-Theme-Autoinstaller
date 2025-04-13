@@ -132,7 +132,7 @@ install_theme() {
 
   # Ekstrak tema
   echo "[+] Mengekstrak theme..."
-  sudo unzip -o "/root/${THEME_NAME}.zip" -d /root/pterodactyl
+  sudo unzip -o "/root/${THEME_NAME}.zip" -d /root
   check_result "Unzip gagal" || return
 
   # Verifikasi hasil ekstrak
