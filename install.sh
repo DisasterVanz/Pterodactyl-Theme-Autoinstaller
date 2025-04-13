@@ -292,7 +292,7 @@ wget -O /root/stellar.zip https://github.com/disastervanz/Pterodactyl-Theme-Auto
 
 
 # Ekstrak file tema
-unzip /root/stellar.zip -d /root/pterodactyl
+unzip /root/stellar.zip -d /root
 
 # Salin tema ke direktori Pterodactyl
 sudo cp -rfT /root/pterodactyl /var/www/pterodactyl
