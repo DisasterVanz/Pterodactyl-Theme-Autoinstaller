@@ -15,6 +15,7 @@ bash <(curl -s https://raw.githubusercontent.com/DisasterVanz/Pterodactyl-Theme-
 - Install Tema Stellar
 - Install Tema Billing
 - Install Tema Enigma
+- Install Tema Elysium
 - Uninstall Tema
 
 ## System Support :
