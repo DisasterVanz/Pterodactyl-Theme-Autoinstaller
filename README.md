@@ -9,6 +9,7 @@
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/DisasterVanz/Pterodactyl-Theme-Autoinstaller/main/install.sh)
 ```
+- Token : vanztheme
 
 ## Fitur Tools :
 
