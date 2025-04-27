@@ -217,29 +217,6 @@ install_theme() {
   php artisan config:clear
   check_result "Gagal membersihkan cache" || return
 
-  # Set permission yang benar
-  echo "[+] Mengatur permission..."
-  sudo find /var/www/pterodactyl -type f -exec chmod 644 {} \;
-  sudo find /var/www/pterodactyl -type d -exec chmod 755 {} \;
-  
-  # Tentukan web server yang digunakan
-  if command -v nginx >/dev/null 2>&1; then
-    WEB_USER="nginx"
-    WEB_SERVICE="nginx"
-  else
-    WEB_USER="www-data"
-    WEB_SERVICE="apache2"
-  fi
-  
-  # Set ownership
-  sudo chown -R $WEB_USER:$WEB_USER /var/www/pterodactyl
-  check_result "Gagal mengatur permission" || return
-
-  # Restart web server
-  echo "[+] Restart web server..."
-  sudo systemctl restart $WEB_SERVICE
-  check_result "Gagal restart web server" || return
-
   # Membersihkan file sementara
   echo "[+] Membersihkan file sementara..."
   sudo rm -rf "/root/${THEME_NAME}.zip"
